@@ -1,0 +1,63 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+Initially, I was under the impression that I would only want to use remote when
+I am working with others. However, after thinking about it and becoming more 
+proficient with Git/GitHub, it feels essential to use remotes as they can free
+the developer to work anywhere and with any machine.
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+For exactly the same reason as you want to manually decide when to commit a
+change. Automatic ambiguous changes can cause more problmes (in the long run)
+than solutions. The purpose of git is to make you a more EFFICIENT
+programmer. Introducing errors via automated pull and push request defeats that
+purpose.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+Fork is the "clone" command (strictly) under the context of GitHub.
+
+Clone is a copy of repository (either from GitHub to local or from a local
+directory to another local directory) with meta data that is actionable by git.
+
+Branch is a separation of two paths in the commit history of a
+repository. Either locally housed or remotely.
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+It enables one to work with confidence concerning the most recent changes and
+helps work entirely offline knowing that every committed changes in the remote
+repository until that moment resides in your local repository.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+I wouldn't: since learning about version control (GitHub) last year, I have
+mandated that every member of the lab learn the software. As to the second
+question, it would be easier to send files without the Git based overhead, but
+it would be MUCH harder to track changes (version/history control) and even
+more difficult to know when something has gone wrong in the code base. Git(Hub)
+helps to keep those information obvious, thereby preventing, otherwise, 
+difficult to track errors.
+
+When would you want to make changes in a separate branch rather than directly 
+in master?  What benefits does each approach have?
+
+Admittedly, the round-about method of using pull request requires it's own
+dissertation just to understand, the methodology is so that changes can be
+reviewed by other members of the project BEFORE they are incorporated into the
+master (live) branch of the project. The idea is to add multiple
+points-of-failure in order to increase the robustness of the code base. Even
+though it WILL still take me a while to wrap my head around the pull request
+workflow, I can already appreciate the purpose of it all.
+
+I wrote the above paragraph about 8 months ago, and it is still taking a while
+just to completely understand the pull request workflow. Perhaps due to
+inconsistent utilization of git.
+
+Now as to using a branch proper: whenever a change is more invovled, it will be
+prudent to use another branch for the reasons highlighted above.
