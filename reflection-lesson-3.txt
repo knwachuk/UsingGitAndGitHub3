@@ -61,3 +61,5 @@ inconsistent utilization of git.
 
 Now as to using a branch proper: whenever a change is more invovled, it will be
 prudent to use another branch for the reasons highlighted above.
+
+--MODIFY LESSON 3 REFLECTIONS FILE--
