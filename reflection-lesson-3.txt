@@ -48,18 +48,32 @@ When would you want to make changes in a separate branch rather than directly
 in master?  What benefits does each approach have?
 
 Admittedly, the round-about method of using pull request requires it's own
-dissertation just to understand, the methodology is so that changes can be
+dissertation just to understand it. The idea is so that changes can be
 reviewed by other members of the project BEFORE they are incorporated into the
 master (live) branch of the project. The idea is to add multiple
 points-of-failure in order to increase the robustness of the code base. Even
 though it WILL still take me a while to wrap my head around the pull request
 workflow, I can already appreciate the purpose of it all.
 
-I wrote the above paragraph about 8 months ago, and it is still taking a while
-just to completely understand the pull request workflow. Perhaps due to
-inconsistent utilization of git.
+I wrote the above paragraph about 8 months ago (May 15, 2017 - Dec 26, 2017), 
+and it is still taking a while just to completely understand the pull request
+workflow. Perhaps due to inconsistent utilization of git.
 
-Now as to using a branch proper: whenever a change is more invovled, it will be
-prudent to use another branch for the reasons highlighted above.
+After another 13 months (Dec 26, 2017 - Jan 8, 2019), it can be fully realized 
+that there is - currently - no better way to foster collaboration and multiple
+redundancies in your code base and I can finally answer the question. 
 
---MODIFY LESSON 3 REFLECTIONS FILE--
+When to Use a Separate Branch
+--------------------
+I would make changes to a branch rather than directly in master if it is
+necessary to make sure that there is always a functional version of the code
+(which I will leave) as the master branch. Of course, when collaborating with
+others, it is necessary to follow the collaborative workflow.
+
+Benefits of Each Method
+--------------------
+1) The first approach (committing directly into master) requires less steps and
+   is a little bit easier to do. 
+2) The second approach (committing changes to a branch, merging conflicts from
+   master to the branch and making a pull request from the branch to master)
+   protects the integrity of the master branch.
